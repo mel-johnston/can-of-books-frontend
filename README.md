@@ -51,3 +51,9 @@
 > - What will your team do if one person is pulling all the weight while the other person is not contributing? Switch driver/navigator
 > - What will your team do if one person is taking over the project and not letting the other member contribute? > Switch driver/navigator
 > - How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level? By maximizing communication and collaboration at all times.
+
+
+[Books Icon](<a href="https://www.flaticon.com/free-icons/library" title="library icons">Library icons created by Freepik - Flaticon</a>)
+
+[White Book Photo](Photo by <a href="https://unsplash.com/es/@olia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olia 💙💛 Gozha</a> on <a href="https://unsplash.com/images/things/book?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
+  
