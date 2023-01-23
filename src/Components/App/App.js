@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Profile from './About';
-import BestBooks from './BestBooks';
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer';
+import Profile from '../About/About';
+import BestBooks from '../BestBooks/BestBooks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
@@ -16,7 +16,7 @@ class App extends React.Component {
     super(props);
     this.state = { bookList: [] };
   }
-  
+
   render() {
     return (
       <>
