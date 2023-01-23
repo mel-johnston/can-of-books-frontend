@@ -19,7 +19,7 @@ class App extends React.Component {
 
   getBooks = async () => {
     let bookData = await axios.get(`${process.env.REACT_APP_SERVER}/books`);
-    this.setState({ bookList: bookData.data});
+    this.setState({ bookList: bookData.data });
     console.log(bookData.data);
   };
 
@@ -32,6 +32,14 @@ class App extends React.Component {
       <>
         <Router>
           <Header />
+          <div> {this.state.bookList.length > 0 && this.state.bookList.map(book => {
+            return (
+              <div>
+                <h2>{book.title}</h2>
+                <p>{book.description}</p>
+              </div>
+            );
+          })}</div>
           <Routes>
             <Route
               exact path="/"
