@@ -35,16 +35,16 @@ class BestBooks extends React.Component {
             {this.state.bookList.map(book => {
               return (
                 <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={`https://via.placeholder.com/1600x900/045a04/FFFF00/?text=${book.title}`}
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3>{book.title}</h3>
-                  <p>{book.description}</p>
-                </Carousel.Caption>
-              </Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={`https://via.placeholder.com/1600x900/045a04/FFFF00/?text=${book.title}`}
+                    alt={`${book.title}`}
+                  />
+                  <Carousel.Caption>
+                    <h3>{book.title}</h3>
+                    <p>{book.description}</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
               )
             })}
           </Carousel>
