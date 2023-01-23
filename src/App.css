@@ -1,3 +1,7 @@
 h1 {
   font-family: 'Macondo', cursive;
 }
+
+.Carousel img {
+  height: 60vh;
+}

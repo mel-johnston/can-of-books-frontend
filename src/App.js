@@ -1,7 +1,7 @@
 import React from 'react';
-import axios from 'axios';
 import Header from './Header';
 import Footer from './Footer';
+import Profile from './About';
 import BestBooks from './BestBooks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -16,17 +16,7 @@ class App extends React.Component {
     super(props);
     this.state = { bookList: [] };
   }
-
-  getBooks = async () => {
-    let bookData = await axios.get(`${process.env.REACT_APP_SERVER}/books`);
-    this.setState({ bookList: bookData.data });
-    console.log(bookData.data);
-  };
-
-  componentDidMount() {
-    this.getBooks();
-  }
-
+  
   render() {
     return (
       <>
@@ -43,9 +33,9 @@ class App extends React.Component {
           <Routes>
             <Route
               exact path="/"
-              element={<BestBooks />}
-            >
-            </Route>
+              element={<BestBooks getBooks = {this.getBooks}/>}
+            ></Route>
+            <Route exact path='/about' element={<Profile />}></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />
