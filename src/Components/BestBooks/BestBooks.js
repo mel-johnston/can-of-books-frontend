@@ -45,7 +45,7 @@ class BestBooks extends React.Component {
                     <p>{book.description}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
-              )
+              );
             })}
           </Carousel>
         ) : (

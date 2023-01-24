@@ -1,4 +1,4 @@
-# Can of Books
+# [Can of Books](can-of-books-tm.netlify.app)
 
 >**Author**: Mel Johnston & Tyler Bennett
 >
@@ -11,7 +11,14 @@
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+> - JavaScript
+> - React
+> - Express
+> - Axios
+> - MongoDO Atlas
+> - Render
+> - Netflify
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -22,15 +29,36 @@
 
 > Name of feature: Set-up, Storage, & Components
 >
-> Estimate of time needed to complete: 3 hours
+> - Estimate of time needed to complete: 3 hours
+> - Start time: 1400 CST
+> - Finish time: 1800 CST
+> - Actual time needed to complete: 4 hours
+>___
 >
-> Start time: 1400 CST
+> Name of feature: Create, Delete
 >
-> Finish time: _____
+> - Estimate of time needed to complete:
+> - Start time: 
+> - Finish time: 
+> - Actual time needed to complete: 
+>___
 >
-> Actual time needed to complete: _____
+>Name of feature: Update
+> - Estimate of time needed to complete:
+> - Start time:
+> - Finish time: 
+> - Actual time needed to complete: 
+>___
+>
+> Name of feature: Authentication
+>
+> - Estimate of time needed to complete:
+> - Start time: 
+> - Finish time: 
+> - Actual time needed to complete: 
 
-## Credit and Collaborations
+
+## Collaborations
 >
 > ### Logistical
 >
@@ -52,8 +80,7 @@
 > - What will your team do if one person is taking over the project and not letting the other member contribute? > Switch driver/navigator
 > - How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level? By maximizing communication and collaboration at all times.
 
+## Attributions
 
-[Books Icon](<a href="https://www.flaticon.com/free-icons/library" title="library icons">Library icons created by Freepik - Flaticon</a>)
-
-[White Book Photo](Photo by <a href="https://unsplash.com/es/@olia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olia 💙💛 Gozha</a> on <a href="https://unsplash.com/images/things/book?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
+>[Favicon](https://www.flaticon.com/free-icons/library)
   
