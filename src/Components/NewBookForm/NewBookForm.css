@@ -8,3 +8,7 @@ form {
 label {
   margin: 0 5px;
 }
+
+.Modal{
+  background-color: black;
+}

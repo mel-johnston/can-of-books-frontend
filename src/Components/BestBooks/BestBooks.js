@@ -14,6 +14,7 @@ class BestBooks extends React.Component {
     };
   };
 
+  closeModal = () => this.setState({showForm: false});
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   getBooks = async () => {
     let bookData = await axios.get(`${process.env.REACT_APP_SERVER}/books`);
@@ -35,6 +36,7 @@ class BestBooks extends React.Component {
       description: event.target.description.value,
       status: event.target.status.value
     }
+    this.closeModal();
     console.log('new book from form', newBook)
     this.postBooks(newBook);
   }
@@ -95,11 +97,11 @@ class BestBooks extends React.Component {
                 );
               })}
             </Carousel>
-            {this.state.showForm === false ?
-              <Button onClick={this.openForm} className="my-4" variant="outline-info">Add New Book</Button>
-              : <NewBookForm
-                handleNewBookSubmit={this.handleNewBookSubmit}
-              />}
+            <Button onClick={this.openForm} className="my-4" variant="outline-info">Add New Book</Button>
+            <NewBookForm
+              handleNewBookSubmit={this.handleNewBookSubmit}
+              showForm={this.state.showForm}
+              closeModal={this.closeModal} />
           </div>
         ) : (
           <h3>No Books Found :(</h3>
