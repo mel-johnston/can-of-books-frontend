@@ -37,10 +37,10 @@
 >
 > Name of feature: Create, Delete
 >
-> - Estimate of time needed to complete:
-> - Start time: 
-> - Finish time: 
-> - Actual time needed to complete: 
+> - Estimate of time needed to complete: 3 hours
+> - Start time: 1400 CST
+> - Finish time: 1600 CST
+> - Actual time needed to complete: 2 hours
 >___
 >
 >Name of feature: Update
