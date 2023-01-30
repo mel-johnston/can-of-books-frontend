@@ -1,8 +1,27 @@
 .Header {
   color: white;
   display: flex;
+
 }
 
 .Header a:hover {
   color: cadetblue;
+}
+
+.Header .nav-link {
+  margin-right: 10px;
+}
+
+.Header button {
+  margin-right: 10px;
+}
+
+.profile-info {
+  margin-left: 40px;
+}
+
+.profile-info img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }

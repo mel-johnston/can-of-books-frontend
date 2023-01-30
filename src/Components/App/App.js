@@ -5,6 +5,9 @@ import Profile from '../About/About';
 import BestBooks from '../BestBooks/BestBooks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { withAuth0 } from "@auth0/auth0-react";
+
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,10 +34,18 @@ class App extends React.Component {
             );
           })}</div>
           <Routes>
-            <Route
-              exact path="/"
-              element={<BestBooks getBooks = {this.getBooks}/>}
-            ></Route>
+            {this.props.auth0.isAuthenticated ?
+            <>
+              <Route
+                exact path="/"
+                element={<BestBooks getBooks={this.getBooks} />}
+              ></Route>
+              </>
+              :
+              <Route></Route>
+            }
+
+
             <Route exact path='/about' element={<Profile />}></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
@@ -45,4 +56,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withAuth0(App);
